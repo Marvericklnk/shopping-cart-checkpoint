@@ -1,0 +1,95 @@
+/* .navbar-brand {
+  color: green !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 50px 0;
+}
+.total-price span {
+  font-size: 30px;
+}
+
+.total {
+  font-weight: bold;
+}
+.list-products {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 70%;
+}
+.card {
+  padding: 5%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 25px;
+}
+
+.card-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.fa-trash-alt {
+  color: #de6b5c;
+}
+
+/* Cart controls retain the starter layout and work without icon fonts. */
+.cart-action {
+  border: 0;
+  background: transparent;
+  color: #111;
+  font-size: 32px;
+  line-height: 1;
+  padding: 8px;
+  margin: 0 5px;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.cart-action:focus-visible { outline: 3px solid #136bd1; outline-offset: 3px; }
+.cart-action.delete { color: #de6b5c; }
+.cart-action.like.is-liked { color: #dc3545; }
+.empty-cart { margin-top: 24px; font-size: 20px; }
+.card-img-top { height: 220px; object-fit: contain; }
+.list-products { width: 100%; flex-wrap: wrap; gap: 12px; }
+.shopping-card-container { max-width: 1200px; width: 95%; }
+@media (max-width: 600px) {
+  .shopping-card-container { margin: 20px 0; }
+  .list-products > .card-body { padding: 8px 0; width: 100%; }
+  .card { max-width: 100%; }
+  .total-price span { font-size: 24px; }
+}
