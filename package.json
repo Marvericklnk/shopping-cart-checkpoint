@@ -1,0 +1,7 @@
+{
+  "name": "shopping-cart-checkpoint",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "test": "node test.cjs" },
+  "devDependencies": { "jsdom": "^27.0.0" }
+}
